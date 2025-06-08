@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import IntroSection from '../components/IntroSection';
 import MenuSection from '../components/MenuSection';
@@ -14,7 +16,8 @@ import SubscribeSection from '../components/SubscribeSection';
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <main>
+      <Header />
+      <main className="pt-16 lg:pt-20">
         <HeroSection />
         <IntroSection />
         <div id="menu">
@@ -45,6 +48,7 @@ const Index = () => {
           <SubscribeSection />
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

@@ -9,6 +9,11 @@ const HeroSection = () => {
     'https://nomad.melbourne/wp-content/uploads/2022/11/Nomad_InteriorsMelb_05-1-1920x1281.jpg'
   ];
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.querySelector(sectionId);
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="two-column-text-image">
       <div className="w-full">
@@ -20,9 +25,12 @@ const HeroSection = () => {
               
               <div className="space-y-4 mb-12">
                 <p>
-                  <a href="#reservations" className="font-bold text-nomad-black hover:underline tracking-wide">
+                  <button 
+                    onClick={() => scrollToSection('#reservations')}
+                    className="font-bold text-nomad-black hover:underline tracking-wide cursor-pointer bg-transparent border-none"
+                  >
                     MAKE A RESERVATION
-                  </a>
+                  </button>
                 </p>
                 <p>
                   <a href="/mezze/" className="font-bold text-nomad-black hover:underline tracking-wide">
