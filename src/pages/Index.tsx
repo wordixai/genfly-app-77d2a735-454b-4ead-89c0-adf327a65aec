@@ -1,12 +1,50 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import HeroSection from '../components/HeroSection';
+import IntroSection from '../components/IntroSection';
+import MenuSection from '../components/MenuSection';
+import DrinksSection from '../components/DrinksSection';
+import ReservationsSection from '../components/ReservationsSection';
+import EventsSection from '../components/EventsSection';
+import ContactSection from '../components/ContactSection';
+import VouchersSection from '../components/VouchersSection';
+import NewsSection from '../components/NewsSection';
+import CareersSection from '../components/CareersSection';
+import SubscribeSection from '../components/SubscribeSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <main>
+        <HeroSection />
+        <IntroSection />
+        <div id="menu">
+          <MenuSection />
+        </div>
+        <div id="drinks">
+          <DrinksSection />
+        </div>
+        <div id="reservations">
+          <ReservationsSection />
+        </div>
+        <div id="events">
+          <EventsSection />
+        </div>
+        <div id="contact-us">
+          <ContactSection />
+        </div>
+        <div id="vouchers">
+          <VouchersSection />
+        </div>
+        <div id="whats-happening">
+          <NewsSection />
+        </div>
+        <div id="careers">
+          <CareersSection />
+        </div>
+        <div id="subscribe">
+          <SubscribeSection />
+        </div>
+      </main>
     </div>
   );
 };
